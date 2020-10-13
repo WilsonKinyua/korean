@@ -47,12 +47,9 @@
                         <ul class="menu">
                             <li><a href="index.php">Home</a></li>
                             <li><a href="about.php">About</a></li>
+                            <li><a href="projects.php">Projects</a></li>
                             <li><a href="careers.php">Careers</a></li>
                             <li>
-                                <!-- First Tier Drop Down -->
-                                <label for="drop-2" class="toggle toogle-2">Dropdown <span class="fa fa-angle-down"
-                                        aria-hidden="true"></span>
-                                </label>
                                 <a href="#">Products <span class="fa fa-angle-down" aria-hidden="true"></span></a>
                                 <input type="checkbox" id="drop-2" />
                                 <ul>
@@ -65,6 +62,7 @@
                                     <!-- <li><a href="trackers.php" class="drop-text">Trackers</a></li> -->
                                 </ul>
                             </li>
+                            <li><a href="tenders.php">Tenders</a></li>
                             <li><a href="contact.php">Contact</a></li>
                             <!-- <li class="nav-right-sty mt-lg-0 mt-sm-4 mt-3">
                                 <a href="login.php" class="reqe-button text-uppercase">Login</a>
