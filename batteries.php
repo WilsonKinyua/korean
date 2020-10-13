@@ -16,7 +16,12 @@ include "solars/tcpdf/fpdf.php";
 
 <!--===============================================================================================-->
     <!-- inner banner -->
-    <div class="inner-banner-w3lsp d-flex flex-column justify-content-center align-items-center">
+    <div class="inner-banner-w3lso d-flex flex-column justify-content-center align-items-center" 
+    style="background: url('https://cdn.pixabay.com/photo/2017/07/10/13/22/battery-2490122_960_720.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 300px;
+    position: relative;
+    z-index: 0;">
     </div>
     <!-- //inner banner -->
     <!-- breadcrumbs -->
@@ -25,7 +30,7 @@ include "solars/tcpdf/fpdf.php";
             <li class="breadcrumb-item">
                 <a href="index.php" class="m-0">Home</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Solar Panels </li>
+            <li class="breadcrumb-item active" aria-current="page">Batteries & Backup</li>
         </ol>
     </nav>
 
@@ -34,9 +39,9 @@ include "solars/tcpdf/fpdf.php";
         <div class="d-flex justify-content-between">
             <div class="col-md-6">
                 <select name="search_filter" id="search_filter" class="form-control selectpicker">
-                    <option value=''>Select Solar Panel </option>
+                    <option value=''>Select Batteries & Backup </option>
                     <?php
-                    $query = "SELECT * FROM products WHERE category = 'Solar Panels'";
+                    $query = "SELECT * FROM products WHERE category = 'Batteries & Backup'";
                     $data = mysqli_query($connection, $query);
                     while ($row = mysqli_fetch_assoc($data)) {
                         echo '<option value="' . $row["item_name"] . '">' . $row["item_name"] . '</option>';
@@ -46,7 +51,7 @@ include "solars/tcpdf/fpdf.php";
             </div>
             <div>
 <!-- ===============================================To generate the pdf =========================================== -->
-                <a href="solars/generate_pdf.php" class="btn btn-primary btn-sm" >Download Our Solar Panel Guide</a>
+                <a href="solars/generate_pdf.php" class="btn btn-primary btn-sm" >Download Our Batteries & Backup</a>
             </div>
             <div>
             </div>
@@ -127,7 +132,7 @@ include "solars/tcpdf/fpdf.php";
                     load_data();
                     function load_data(query = '') {
                             $.ajax({
-                                url: "solars/solar_panels_pull.php",
+                                url: "solars/batteries_pull.php",
                                 method: "POST",
                                 data: { query: query },
                                 success: function(data) {

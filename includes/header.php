@@ -57,19 +57,19 @@
                                 <input type="checkbox" id="drop-2" />
                                 <ul>
                                     <li><a href="solar_panels.php" class="drop-text">Solar Panels</a></li>
-                                    <li><a href="off_grid_solar.php" class="drop-text">Off Grid Solar</a></li>
-                                    <li><a href="nverters.php" class="drop-text">Inverters & Electrical</a></li>
+                                    <!-- <li><a href="off_grid_solar.php" class="drop-text">Off Grid Solar</a></li> -->
+                                    <li><a href="inverters.php" class="drop-text">Inverters & Electrical</a></li>
                                     <li><a href="batteries.php" class="drop-text">Batteries & Backup</a></li>
-                                    <li><a href="grid_tie_solar.php" class="drop-text">Grid Tie Solar</a></li>
-                                    <li><a href="racking_mounts.php" class="drop-text">Racking & Mounts</a></li>
-                                    <li><a href="trackers.php" class="drop-text">Trackers</a></li>
+                                    <!-- <li><a href="grid_tie_solar.php" class="drop-text">Grid Tie Solar</a></li> -->
+                                    <li><a href="cables.php" class="drop-text">Cables</a></li>
+                                    <!-- <li><a href="trackers.php" class="drop-text">Trackers</a></li> -->
                                 </ul>
                             </li>
                             <li><a href="contact.php">Contact</a></li>
-                            <li class="nav-right-sty mt-lg-0 mt-sm-4 mt-3">
+                            <!-- <li class="nav-right-sty mt-lg-0 mt-sm-4 mt-3">
                                 <a href="login.php" class="reqe-button text-uppercase">Login</a>
                                 <a href="register.php" class="reqe-button text-uppercase">Register</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </nav>
                 </div>

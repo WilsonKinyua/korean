@@ -15,8 +15,14 @@ include "solars/tcpdf/fpdf.php";
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
 <!--===============================================================================================-->
+
     <!-- inner banner -->
-    <div class="inner-banner-w3lsp d-flex flex-column justify-content-center align-items-center">
+    <div class="inner-banner-w3lso d-flex flex-column justify-content-center align-items-center" 
+    style="background: url('https://images.wholesalesolar.com/media/battery-cable-L2.png?auto=compress%2Cformat&ixlib=php-3.3.0&q=45&s=e56a1954c5868d9c077327985fb332e0') no-repeat center;
+    background-size: cover;
+    min-height: 300px;
+    position: relative;
+    z-index: 0;">
     </div>
     <!-- //inner banner -->
     <!-- breadcrumbs -->
@@ -25,7 +31,7 @@ include "solars/tcpdf/fpdf.php";
             <li class="breadcrumb-item">
                 <a href="index.php" class="m-0">Home</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Solar Panels </li>
+            <li class="breadcrumb-item active" aria-current="page">Battery Cable</li>
         </ol>
     </nav>
 
@@ -34,9 +40,9 @@ include "solars/tcpdf/fpdf.php";
         <div class="d-flex justify-content-between">
             <div class="col-md-6">
                 <select name="search_filter" id="search_filter" class="form-control selectpicker">
-                    <option value=''>Select Solar Panel </option>
+                    <option value=''>Select Battery Cable </option>
                     <?php
-                    $query = "SELECT * FROM products WHERE category = 'Solar Panels'";
+                    $query = "SELECT * FROM products WHERE category = 'Cables'";
                     $data = mysqli_query($connection, $query);
                     while ($row = mysqli_fetch_assoc($data)) {
                         echo '<option value="' . $row["item_name"] . '">' . $row["item_name"] . '</option>';
@@ -46,7 +52,7 @@ include "solars/tcpdf/fpdf.php";
             </div>
             <div>
 <!-- ===============================================To generate the pdf =========================================== -->
-                <a href="solars/generate_pdf.php" class="btn btn-primary btn-sm" >Download Our Solar Panel Guide</a>
+                <a href="solars/generate_pdf.php" class="btn btn-primary btn-sm" >Download Our Batteries & Backup</a>
             </div>
             <div>
             </div>
@@ -97,7 +103,7 @@ include "solars/tcpdf/fpdf.php";
     <!--===============================================================================================-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
     <!--===============================================================================================-->
-    <!-- <script src="solars/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script> -->
+        <!-- <script src="solars/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script> -->
      <!--===============================================================================================-->
     <script>
         $('.js-pscroll').each(function() {
@@ -127,7 +133,7 @@ include "solars/tcpdf/fpdf.php";
                     load_data();
                     function load_data(query = '') {
                             $.ajax({
-                                url: "solars/solar_panels_pull.php",
+                                url: "solars/batteries_pull.php",
                                 method: "POST",
                                 data: { query: query },
                                 success: function(data) {

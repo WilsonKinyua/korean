@@ -5,20 +5,19 @@
                 <div class="col-lg-4 footer-top mt-md-0 mt-sm-5">
                     <h2>
                         <a class="navbar-brand" href="index.php">
-                            Intense
+                            KSPC
                         </a>
                     </h2>
                     <div class="fv3-contact mt-2">
                         <p>
-                            <a href="mailto:example@email.com">info@koreankenyasolarltd.co.ke</a>
+                            <a href="info@koreankenyasolarltd.co.ke">info@koreankenyasolarltd.co.ke</a>
                         </p>
                     </div>
                     <div class="fv3-contact my-2">
-                        <p>+456 123 7890</p>
+                        <p>+254-740-42-41-06</p>
                     </div>
                     <div class="fv3-contact">
-                        <p>+90 nsequursu dsdesdc,
-                            <br>xxx Street State 34789.</p>
+                        <p> P.O Box 70392 -00400, NAIROBI – KENYA,<br>5th Floor, Queensway House, suite 7 <br> Kaunda Street.</p>
                     </div>
                 </div>
                 <div class="col-lg-2  col-md-6 mt-lg-0 mt-4">
